@@ -1,0 +1,26 @@
+body {
+    /* Set a lightish dark forest green background */
+    background-color: #e6733e;  /* coral/peach color */
+    
+    /* different font for website */
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    
+    /* black text color */
+    color: #000000;  /*black text contrasts the background */
+    
+    /*added padding*/
+    padding: 20px;
+    
+    /* Font size added to fit screen better */
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    /* Adjust headings to stand out */
+    color: #d6ce2d79;  /* Yellowish Headings */
+}
+
+p {
+    /* line height for better readability */
+    line-height: 1.6;
+}
