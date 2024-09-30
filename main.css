@@ -1,26 +1,111 @@
+/* Resettings some default styles using multiple selectors separated by commas */
+body, h1, h2, p, ul, li, a {
+    margin: 0; /* Removing the default margin */
+    padding: 0; /* Removing the default padding */
+    font-family: Arial, Helvetica, sans-serif; /* Setting the default font*/
+}
+
+/* HTML Element Selector */
 body {
-    /* Set a lightish dark forest green background */
-    background-color: #e6733e;  /* coral/peach color */
-    
-    /* different font for website */
-    font-family: 'Arial', 'Helvetica', sans-serif;
-    
-    /* black text color */
-    color: #000000;  /*black text contrasts the background */
-    
-    /*added padding*/
-    padding: 20px;
-    
-    /* Font size added to fit screen better */
-    font-size: 16px;
+    background-color: #e6733e; /* Coral/peach background color */
 }
 
-h1, h2, h3 {
-    /* Adjust headings to stand out */
-    color: #d6ce2d79;  /* Yellowish Headings */
+h1 {
+    color: #d6ce2d; /* Yellowish Text Color */
+    font-size: 2em; /* 2x the default font size */
+    margin-bottom: 1em; /* Adding some space below the heading */
 }
 
+h2 {
+    font-size: 1.5em; /* 1.5x the default font size */
+    color: #2d6a4f; /* Dark green text color */
+}
+
+/* Styling the paragraph */
 p {
-    /* line height for better readability */
-    line-height: 1.6;
+    font-size: 16px; /* 16px is the default font size */
+    color: #2d6a4f; /* Dark green text color */
+    margin-bottom: 12px; /* Adding some space below the paragraph */
+}
+
+/* Styling the link within the paragraph */
+p a {
+    color: #d6ce2d; /* Yellowish accent */
+    text-decoration: none; /* Removing the underline */
+}
+
+/* Styling the unordered list */
+ul {
+    list-style-type: none; /* Removing the bullet points */
+    margin-left: 20px; /* Indenting the list */
+    margin-bottom: 12px; /* Adding some space below the list */
+}
+
+ul li {
+    margin-bottom: 20px; /* Indenting the List */
+    color: #2d6a4f; /* Dark green text color */
+}
+
+/* Styling the unordered list within a div */
+div ul {
+    list-style-type: square; /* Adding the bullet points back */
+}
+
+/* General styling using a class */
+.feature-card {
+    border: 2px solid #07691f; /* Dark green */
+    padding: 20px; /* Adding some space inside the card */
+    margin: 20px; /* Adding some space outside the card */
+    background-color: #f9f9f9; /* Light gray */
+}
+
+/* Styling h3 within a class */
+.feature-card h3 {
+    font-size: 20px; /* 20px is the default font size */
+    margin-bottom: 10px; /* Adding some space below the heading */
+    color: #2d6a4f; /* Dark green text color */
+}
+
+/* Styling p within a class */
+.feature-card p {
+    margin-bottom: 10px; /* Adding some space below the paragraph */
+    color: #2d6a4f; /* Dark green text color */
+}
+
+/* Specific styling using an ID */
+#special-feature {
+    background-color: #fefae0; /* Light cream background color */
+    border-color: #d6ce2d; /* Yellowish border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a shadow */
+}
+
+/* Styling the link in its normal state */
+a {
+    display: inline-block; /* Making the link a block element */
+    color: #2d6a4f; /* Dark green text color */
+    text-decoration: none; /* Removing the underline */
+    padding: 5px 10px; /* Adding some space inside the link */
+    border: 1px solid #2d6a4f; /* Dark green border color */
+    transition: all 0.3s ease; /* Adding a transition */
+}
+
+/* Conditional styling for the hover state */
+a:hover {
+    background-color: #1b4332; /* Darker green background color on hover */
+    color: white; /* White text color */
+}
+
+/* Styling the button */
+button {
+    padding: 5px 10px; /* Adding some space inside the button */
+    border: none; /* Removing the border */
+    background-color: #ecf0f1; /* Light gray background color */
+    cursor: pointer; /* Changing the cursor to a pointer */
+    transition: all 0.3s ease; /* Adding a transition */
+}
+
+/* Conditional styling for the hover state */
+button:hover {
+    background-color: #d6ce2d; /* Yellowish background color on hover */
+    color: #0d4d0b; /* Dark green text on hover */
 }
